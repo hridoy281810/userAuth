@@ -3,8 +3,8 @@ import Navbar from "@/components/Navbar";
 import ReduxProvider from "@/provider/reduxProvider";
 
 export const metadata = {
-  title: "NextAuthPro",
-  description: "NextAuthPro",
+  title: "usrAuth",
+  description: "userAuth",
 };
 
 export default function RootLayout({ children }) {
