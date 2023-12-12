@@ -56,12 +56,12 @@ $secondary-color: gray;
 
 .FormStyle {
   padding: 20px 50px;
-  background-color: rgba(0, 0, 0, 0.35);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  border-radius: 20px;
+  background-color: #ff00d48d;
+  box-shadow: 0 4px 8px rgba(145, 9, 125, 0.9);
   display: flex;
   flex-direction: column;
   justify-items: center;
-  border-radius: 20px;
  
   Form {
     font-size: 20px !important;
@@ -76,8 +76,8 @@ $secondary-color: gray;
       border: none;
     }
     Input {
-      padding: 6px 6px !important;
       font-size: 16px !important;
+      padding: 6px 6px !important;
     }
   }
 }
@@ -89,7 +89,7 @@ $secondary-color: gray;
 
 @include mobile {
   .FormStyle {
-    padding: 5px;
+    padding: 10px;
     Form {
       width: 100%;
     }

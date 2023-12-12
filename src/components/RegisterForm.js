@@ -44,7 +44,7 @@ const RegistrationForm = () => {
   return (
     <div className={variable.FormStyle}>
       <div className={variable.titleSection}>
-        <h2 style={{color:"white"}} className={variable.title}>Welcome Back</h2>
+        <h2 style={{color:"white"}} className={variable.title}>User Auth</h2>
         <p style={{color:"white"}} className={variable.subTitle}>Please Register</p>
       </div>
       <Form

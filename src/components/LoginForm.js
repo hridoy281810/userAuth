@@ -61,7 +61,7 @@ const LoginForm = () => {
   return (
     <div className={variable.FormStyle}>
       <div className={variable.titleSection}>
-        <h2 style={{color:"white"}} className={variable.title}>Welcome Back</h2>
+        <h2 style={{color:"white"}} className={variable.title}>User Auth</h2>
         <p style={{color:"white"}} className={variable.subTitle}>Please login</p>
       </div>
       <Form
@@ -104,7 +104,7 @@ const LoginForm = () => {
         </Form.Item>
 
         <Form.Item>
-          <p className={variable.redirectText}>
+          <p style={{marginTop: '0', marginBottom: '0'}} className={variable.redirectText}>
             Forgot your{" "}
             <span className="redirectLink">
               <Link style={{color:"white",textDecoration: "underline" }} href="/forgotpass">Password</Link>
