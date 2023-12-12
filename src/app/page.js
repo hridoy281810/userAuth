@@ -48,11 +48,11 @@ const Home = () => {
           </Flex>
         </div>
       ) : (
-        <div className={` ${variable.bgImage} ${variable.homeStyle}`}>
+        <div className={` ${variable.bgColor} ${variable.homeStyle}`}>
           <div>
             {user ? (
               <div className={variable.homeContainer}>
-                <h2 className={variable.homeTitle}>Welcome to Next Auth pro</h2>
+                <h2 className={variable.homeTitle}>Welcome to Next Home</h2>
               </div>
             ) : (
               <LoginPage></LoginPage>

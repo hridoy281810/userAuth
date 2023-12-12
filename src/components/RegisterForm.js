@@ -24,7 +24,7 @@ const RegistrationForm = () => {
         Swal.fire({
           position: "center center",
           icon: "success",
-          title: "Please check your Email",
+          title: "Please go to your email",
           showConfirmButton: false,
           timer: 1500,
         });
@@ -34,7 +34,7 @@ const RegistrationForm = () => {
       console.log(error);
       Swal.fire({
         icon: "error",
-        title: "Oops...",
+        title: "Please solve this issue",
         text: error.message,
       });
     }
@@ -44,8 +44,8 @@ const RegistrationForm = () => {
   return (
     <div className={variable.FormStyle}>
       <div className={variable.titleSection}>
-        <h2 style={{color:"black"}} className={variable.title}>Welcome Back</h2>
-        <p style={{color:"black"}} className={variable.subTitle}>Please Register</p>
+        <h2 style={{color:"white"}} className={variable.title}>Welcome Back</h2>
+        <p style={{color:"white"}} className={variable.subTitle}>Please Register</p>
       </div>
       <Form
         name="Register Form"
@@ -113,7 +113,7 @@ const RegistrationForm = () => {
         <Form.Item>
           <p className={variable.redirectText}>
             {" "}
-            All Ready Have an account <Link style={{color:"black"}} href={"/login"}>Login here</Link>
+            Do you already have an account? <Link style={{color:"white",textDecoration: "underline" }}  href={"/login"}>Login here</Link>
           </p>
         </Form.Item>
       </Form>

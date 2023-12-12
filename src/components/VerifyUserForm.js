@@ -18,8 +18,8 @@ const VerifyUserForm = () => {
         Swal.fire({
           position: "center center",
           icon: "success",
-          title: "Congratulation!!",
-          text: "Now login!",
+          title: "Welcome!",
+          text: "login!",
           showConfirmButton: false,
           timer: 1500,
         });
@@ -28,7 +28,7 @@ const VerifyUserForm = () => {
     } catch (error) {
       Swal.fire({
         icon: "error",
-        title: "Oops...",
+        title: "Please solve this issue",
         text: error.message,
       });
     }

@@ -26,7 +26,7 @@ const UpdateForm = () => {
       console.log(error);
       Swal.fire({
         icon: "error",
-        title: "Oops...",
+        title: "Please solve this issue",
         text: error.message,
       });
     }

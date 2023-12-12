@@ -26,9 +26,7 @@ const Navbar = () => {
   };
   const profileMenu = (
     <Menu>
-      <Menu.Item key="updateProfile">
-        <Link href="/updateprofile">Update Profile</Link>
-      </Menu.Item>
+     
 
       {user?.data?.user?.email ? (
         <Menu.Item key={"logout"}>

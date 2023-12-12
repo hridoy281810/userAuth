@@ -14,7 +14,7 @@ import createJWT from "@/utils/createJWT";
 
 const LoginForm = () => {
   const search = useSearchParams();
-  const from = search.get("redirectUrl" || "/");
+  const from = search.get("redirectUrl") || "/"; 
   const { replace } = useRouter();
   const { login, getUserInfo } = api;
   const [loading, setLoading] = useState(false);
@@ -39,8 +39,8 @@ const LoginForm = () => {
             Swal.fire({
               position: "center center",
               icon: "success",
-              title: "Congratulation!!",
-              text: "Now Login successful",
+              title: "Welcome!",
+              text: "Login successful",
               showConfirmButton: false,
               timer: 1500,
             });
@@ -52,7 +52,7 @@ const LoginForm = () => {
       console.log(error);
       Swal.fire({
         icon: "error",
-        title: "Oops...",
+        title:  error.message || "An error occurred during login.",
         text: error.message,
       });
     }
@@ -61,8 +61,8 @@ const LoginForm = () => {
   return (
     <div className={variable.FormStyle}>
       <div className={variable.titleSection}>
-        <h2 style={{color:"black"}} className={variable.title}>Welcome Back</h2>
-        <p style={{color:"black"}} className={variable.subTitle}>Please login</p>
+        <h2 style={{color:"white"}} className={variable.title}>Welcome Back</h2>
+        <p style={{color:"white"}} className={variable.subTitle}>Please login</p>
       </div>
       <Form
         name="normal_login"
@@ -107,7 +107,7 @@ const LoginForm = () => {
           <p className={variable.redirectText}>
             Forgot your{" "}
             <span className="redirectLink">
-              <Link style={{color:"black"}} href="/forgotpass">Password</Link>
+              <Link style={{color:"white",textDecoration: "underline" }} href="/forgotpass">Password</Link>
             </span>
           </p>
         </Form.Item>
@@ -119,9 +119,9 @@ const LoginForm = () => {
           </Form.Item>
           <Form.Item>
             <p className={variable.redirectText}>
-              Don.t Have an Account{" "}
+            If you are newt{" "}
               <span className="redirectLink">
-                <Link style={{color:"black"}} href="/register">register now!</Link>
+                <Link style={{color:"white",textDecoration: "underline" }} href="/register">please open account!</Link>
               </span>
             </p>
           </Form.Item>

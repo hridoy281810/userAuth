@@ -28,7 +28,7 @@ const ForgotPassForm = () => {
       if (error.message) {
         Swal.fire({
           icon: "error",
-          title: "Oops...",
+          title: "Please solve this issue",
           text: error.message,
         });
       }
